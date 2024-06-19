@@ -21,6 +21,29 @@ Cette documentation décrit le processus étape par étape de déploiement d'une
 * Docker Hub
 * MongoDB Atlas (ou tout autre service d'hébergement MongoDB)
 
+## Étape 1 : Configuration de la VM:
+### 1. creation du VM:
+* Système d'exploitation : choisissez un système d'exploitation basé sur Linux. J'utilise Ubuntu.
+* Groupe de sécurité : autorisez le trafic entrant sur les ports 80, 22 et 443.
+  ````
+  sudo iptables -A INPUT -p tcp --dport 22 -j ACCEPT
+  sudo iptables -A INPUT -p tcp --dport 80 -j ACCEPT
+  sudo iptables -A INPUT -p tcp --dport 443-j ACCEPT
+  
+  ````
+
+### 2. Installez Docker :
+Installez Docker  à l'aide de la commande suivante.
+
+`sudo apt install docker.io -y && sudo systemctl start docker`
+
+![image](https://github.com/JRMARIEM/Node.js-Application/assets/161127704/2a70bb6c-be0c-4148-ae5a-64b9bdb226d5)
+
+
+
+### 3. Configuration de l'application d'exécution auto-hébergée en tant que service
+
+
 
 
 
