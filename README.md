@@ -16,10 +16,10 @@ Cette documentation décrit le processus étape par étape de déploiement d'une
 
 1. Aperçu des composants :
 
-*Dépôt GitHub
-*GitHub Actions
-*Docker Hub
-*MongoDB Atlas (ou tout autre service d'hébergement MongoDB)
+* Dépôt GitHub
+* GitHub Actions
+* Docker Hub
+* MongoDB Atlas (ou tout autre service d'hébergement MongoDB)
 
 
 
