@@ -43,7 +43,17 @@ Installez Docker  à l'aide de la commande suivante.
 
 ### 3. Configuration de l'application d'exécution auto-hébergée en tant que service
 
-
+* Download the self-hosted runner package from GitHub.
+  
+````
+# Create a folder
+$ mkdir actions-runner && cd actions-runnerCopied!
+# Download the latest runner package
+$ curl -o actions-runner-linux-x64-2.317.0.tar.gz -L https://github.com/actions/runner/releases/download/v2.317.0/actions-runner-linux-x64-2.317.0.tar.gz
+# Optional: Validate the hash
+$ echo "9e883d210df8c6028aff475475a457d380353f9d01877d51cc01a17b2a91161d  actions-runner-linux-x64-2.317.0.tar.gz" | shasum -a 256 -c# Extract the installer
+$ tar xzf ./actions-runner-linux-x64-2.317.0.tar.gz
+````
 
 
 
