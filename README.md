@@ -55,6 +55,13 @@ $ echo "9e883d210df8c6028aff475475a457d380353f9d01877d51cc01a17b2a91161d  action
 $ tar xzf ./actions-runner-linux-x64-2.317.0.tar.gz
 ````
 
+* Configure
+  ````
+ # Create the runner and start the configuration experience
+$ ./config.sh --url https://github.com/JRMARIEM/Node.js-Application --token BGNJ2GDWL4EYAZU7UX32TZTGOXA7I# Last step, run it!
+$ ./run.sh
+````
+
 
 
 
