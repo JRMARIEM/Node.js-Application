@@ -16,17 +16,17 @@ jobs:
       - name: Login to docker hub
         run: docker login -u ${{ secrets.DOCKER_USERNAME }} -p ${{ secrets.DOCKER_PASSWORD }}       
       - name: Build docker image
-        run: docker build -t rahulvikhe/nodejs-notes-app .  
+        run: docker build -t docker push 13239713/nodejs-notes-app .  
       - name: Publish image to docker hub
-        run: docker push rahulvikhe/nodejs-notes-app:latest
+        run: docker push docker push 13239713/nodejs-notes-app:tagname
         
   deploy:
     needs: build
     runs-on: self-hosted
     steps:
       - name: Pull image from docker hub
-        run: docker pull rahulvikhe/nodejs-notes-app:latest
+        run: docker pull docker push 13239713/nodejs-notes-app:tagname
       - name: Delete old container
         run: docker rm -f nodejs-app-container 
       - name: Run docker container
-        run: docker run -d -p 80:80 --name nodejs-app-container rahulvikhe/nodejs-notes-app
+        run: docker run -d -p 80:80 --name nodejs-app-container docker push 13239713/nodejs-notes-app
